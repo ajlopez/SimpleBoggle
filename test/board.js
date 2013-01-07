@@ -18,12 +18,16 @@ assert.equal(board.getHeight(), 4);
 
 var cell = board.getCell(0, 0);
 assert.ok(cell);
+assert.equal(cell.x, 0);
+assert.equal(cell.y, 0);
 assert.equal(cell.letter, undefined);
 assert.ok(cell.neighbors);
 assert.equal(cell.neighbors.length, 3);
 
 var cell = board.getCell(1, 1);
 assert.ok(cell);
+assert.equal(cell.x, 1);
+assert.equal(cell.y, 1);
 assert.equal(cell.letter, undefined);
 assert.ok(cell.neighbors);
 assert.equal(cell.neighbors.length, 8);
@@ -39,3 +43,20 @@ assert.equal(cell.neighbors.length, 5);
 board.setLetter(2, 2, 'A');
 var cell = board.getCell(2, 2);
 assert.equal(cell.letter, 'A');
+
+// Find letter
+
+board.setLetter(2, 3, 'B');
+board.setLetter(3, 3, 'B');
+
+var cells = board.findLetter('Z');
+assert.ok(cells);
+assert.equal(cells.length, 0);
+var cells = board.findLetter('A');
+assert.ok(cells);
+assert.equal(cells.length, 1);
+cells.forEach(function (cell) { assert.equal(cell.letter, 'A'); });
+var cells = board.findLetter('B');
+assert.ok(cells);
+assert.equal(cells.length, 2);
+cells.forEach(function (cell) { assert.equal(cell.letter, 'B'); });
