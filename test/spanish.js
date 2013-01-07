@@ -66,6 +66,8 @@ biconsonants.push('ll');
 biconsonants.push('rr');
 biconsonants.push('ch');
 
+biconsonants.removeItem('dl');
+
 var dipthongs = [];
 var tripthongs = [];
 
@@ -129,6 +131,7 @@ for (var k = 0; k < vowels.length; k++)
 
 assert.ok(syllables.indexOf('da') >= 0);
 assert.ok(syllables.indexOf('dra') >= 0);
+assert.ok(syllables.indexOf('dla') < 0);
 assert.ok(syllables.indexOf('dad') >= 0);
 assert.ok(syllables.indexOf('mal') >= 0);
 assert.ok(syllables.indexOf('man') >= 0);
