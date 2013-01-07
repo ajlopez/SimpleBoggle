@@ -19,4 +19,11 @@ assert.equal(board.getHeight(), 4);
 var cell = board.getCell(0, 0);
 assert.ok(cell);
 assert.equal(cell.letter, undefined);
+assert.ok(cell.neighbors);
+assert.equal(cell.neighbors.length, 3);
 
+var cell = board.getCell(1, 1);
+assert.ok(cell);
+assert.equal(cell.letter, undefined);
+assert.ok(cell.neighbors);
+assert.equal(cell.neighbors.length, 8);
