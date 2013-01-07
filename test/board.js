@@ -38,25 +38,21 @@ assert.equal(cell.letter, undefined);
 assert.ok(cell.neighbors);
 assert.equal(cell.neighbors.length, 5);
 
+var cell = board.getCell(0, 2);
+assert.ok(cell);
+assert.equal(cell.letter, undefined);
+assert.ok(cell.neighbors);
+assert.equal(cell.neighbors.length, 5);
+
+var cell = board.getCell(0, 3);
+assert.ok(cell);
+assert.equal(cell.letter, undefined);
+assert.ok(cell.neighbors);
+assert.equal(cell.neighbors.length, 3);
+
 // Set letter
 
 board.setLetter(2, 2, 'A');
 var cell = board.getCell(2, 2);
 assert.equal(cell.letter, 'A');
 
-// Find letter
-
-board.setLetter(2, 3, 'B');
-board.setLetter(3, 3, 'B');
-
-var cells = board.findLetter('Z');
-assert.ok(cells);
-assert.equal(cells.length, 0);
-var cells = board.findLetter('A');
-assert.ok(cells);
-assert.equal(cells.length, 1);
-cells.forEach(function (cell) { assert.equal(cell.letter, 'A'); });
-var cells = board.findLetter('B');
-assert.ok(cells);
-assert.equal(cells.length, 2);
-cells.forEach(function (cell) { assert.equal(cell.letter, 'B'); });
