@@ -14,3 +14,9 @@ assert.ok(board);
 assert.equal(board.getWidth(), 4);
 assert.equal(board.getHeight(), 4);
 
+// Get cell
+
+var cell = board.getCell(0, 0);
+assert.ok(cell);
+assert.equal(cell.letter, undefined);
+
