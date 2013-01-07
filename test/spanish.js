@@ -139,3 +139,7 @@ assert.ok(syllables.indexOf('in') >= 0);
 assert.ok(syllables.indexOf('im') >= 0);
 assert.ok(syllables.indexOf('mra') < 0);
 assert.ok(syllables.indexOf('mla') < 0);
+assert.ok(syllables.indexOf('cha') >= 0);
+assert.ok(syllables.indexOf('lla') >= 0);
+assert.ok(syllables.indexOf('llan') >= 0);
+assert.ok(syllables.indexOf('rre') >= 0);
