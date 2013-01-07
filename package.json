@@ -1,7 +1,7 @@
 { "name": "simpleboggle"
 , "description": "Simple Boggle board and word search library for JavaScript/Node.js"
 , "keywords": [ "boggle", "game", "javascript" ]
-, "version": "0.0.1"
+, "version": "0.0.1alpha"
 , "author": "Angel 'Java' Lopez <webmaster@ajlopez.com> (http://www.ajlopez.com)"
 , "repository": { "type": "git", "url": "git://github.com/ajlopez/SimpleBoggle.git" }
 , "main": "./lib/simpleboggle.js"
