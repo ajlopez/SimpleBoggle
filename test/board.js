@@ -27,3 +27,15 @@ assert.ok(cell);
 assert.equal(cell.letter, undefined);
 assert.ok(cell.neighbors);
 assert.equal(cell.neighbors.length, 8);
+
+var cell = board.getCell(0, 1);
+assert.ok(cell);
+assert.equal(cell.letter, undefined);
+assert.ok(cell.neighbors);
+assert.equal(cell.neighbors.length, 5);
+
+// Set letter
+
+board.setLetter(2, 2, 'A');
+var cell = board.getCell(2, 2);
+assert.equal(cell.letter, 'A');
