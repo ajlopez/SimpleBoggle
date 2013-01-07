@@ -31,3 +31,22 @@ assert.ok(tree.s.p.i.c);
 assert.ok(tree.s.p.i.c.e);
 assert.ok(tree.s.p.i.c.e[''] !== undefined);
 
+// Find word
+
+var board = simpleboggle.createBoard();
+board.setLetter(0, 0, 's');
+board.setLetter(0, 1, 'p');
+board.setLetter(0, 2, 'a');
+board.setLetter(0, 3, 'm');
+
+var results = board.findWords(tree);
+assert.ok(results);
+assert.equal(results.length, 1);
+
+board.setLetter(1, 1, 'i');
+board.setLetter(2, 1, 'c');
+board.setLetter(3, 1, 'e');
+
+var results = board.findWords(tree);
+assert.ok(results);
+assert.equal(results.length, 2);
