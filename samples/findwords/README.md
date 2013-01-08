@@ -146,7 +146,7 @@ You can try also:
 ```
 node run sers patg line sers
 node run rscls deiae gntrp iaeso lmidc
-node dsrodg temens rasito dgntrp reiaes tsclpd
+node run dsrodg temens rasito dgntrp reiaes tsclpd
 ```
 from [Creating Dense Boggle Boards](http://ai.stanford.edu/~chuongdo/boggle/index.html).
 

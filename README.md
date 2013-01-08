@@ -51,7 +51,7 @@ In version 0.0.2, the file `lib/english.json` was compiled using a word list of 
 was taken from scowl.7.1, `final/english-words.10`, using `compilewords` sample. Acronyms were skipped. To do: compile
 more words.
 
-In version 0.0.3, the same file was compiled using the world list from [yawml](http://www.gtoal.com/scrabble/yawl/), using
+In version 0.0.3, the same file was compiled using the world list from [yawl](http://www.gtoal.com/scrabble/yawl/), using
 `word.list` and `sigword.list`. See [Yawl in this project](https://github.com/ajlopez/SimpleBoggle/tree/master/samples/yawl).
 
 ## Reference
