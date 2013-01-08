@@ -51,7 +51,7 @@ var results = board.findWords(tree);
 assert.ok(results);
 assert.equal(results.length, 2);
 
-var word = simpleboggle.chainToString(results[0]);
+var word = simpleboggle.cellsToWord(results[0]);
 assert.ok(word === 'spam' || word === 'spice');
-var word = simpleboggle.chainToString(results[1]);
+var word = simpleboggle.cellsToWord(results[1]);
 assert.ok(word === 'spam' || word === 'spice');

@@ -18,7 +18,7 @@ args.forEach(function (filename) {
         var p = word.indexOf("'");
         if (p >= 0)
             word = word.substring(0, p);
-        p = word.indexOf('\n');
+        p = word.indexOf('\r');
         if (p >= 0)
             word = word.substring(0, p);
 
