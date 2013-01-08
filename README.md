@@ -43,6 +43,7 @@ compile word list at `lib/english.json`.
 
 - 0.0.1: Published 2013-01-07, first version.
 - 0.0.2: Published 2013-01-08, first samples, compiled English word list.
+- 0.0.3: Under development, in master.
 
 ## Word List
 
