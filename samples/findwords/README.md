@@ -18,30 +18,137 @@ node run rhre ypcs wnsn tego
 ```
 The output is the list of found words. A word is repeated if it was found in more than one chain of dices.
 ```
+rhy
+rhyne
+rhynes
+wyn
+wyns
 we
+wet
+wen
 went
+wench
+wens
+twp
+te
+tew
 ten
+tench
+tens
+tenson
+tensons
+tes
+teg
+tegs
+hyp
+hyps
+pry
+pyne
+pynes
+ph
+pre
+pres
 press
+ny
+ne
 new
+newt
 net
+ness
+neg
+negs
+ewt
+et
+en
+ens
+eng
+engs
+es
+espy
+ess
+esse
+ego
+egos
+rhy
+rhyne
+rhynes
 re
-cs
-cs
+rec
+recs
+recs
+res
+ch
+chypre
+chypres
+cress
+cresset
+cess
+cesse
+spry
+spy
+sny
+sew
+sewn
 set
+sen
 sent
+seg
+segno
+sego
+snog
 so
+sog
 son
+sonce
+sonces
+song
+sons
+sonse
 get
+gen
+gent
+gens
+gesse
 go
+gos
+gosse
+gon
+gons
+gons
+er
+ers
+ech
+es
+ess
+esse
+ser
+sec
+secs
+snog
+snogs
 no
+nos
+nose
+nog
+nogs
+os
+ose
 on
 once
+oncer
+oncers
+onces
+ons
+onset
+ons
 ```
+You can try also:
+```
+node run sers patg line sers
+node run rscls deiae gntrp iaeso lmidc
+node dsrodg temens rasito dgntrp reiaes tsclpd
+```
+from [Creating Dense Boggle Boards](http://ai.stanford.edu/~chuongdo/boggle/index.html).
 
-It uses the module file `/lib/english.json` compiled running the sample `compilewords` over a list of word from
-[scowl project](http://wordlist.sourceforge.net/). The word list
-was taken from scowl.7.1, `final/english-words.10`, using `compilewords` sample. Acronyms were skipped. To do: compile
-more words.
-
-
+It uses the module file `/lib/english.json`. Its sources are described at main README.me.
 
