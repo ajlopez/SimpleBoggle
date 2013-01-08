@@ -56,3 +56,9 @@ board.setLetter(2, 2, 'A');
 var cell = board.getCell(2, 2);
 assert.equal(cell.letter, 'A');
 
+// Create board with other size
+
+var board = simpleboggle.createBoard(2, 3);
+assert.ok(board);
+assert.equal(board.getWidth(), 2);
+assert.equal(board.getHeight(), 3);

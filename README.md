@@ -40,6 +40,12 @@ TBD
 - 0.0.1: Published
 - 0.0.2: Under development in master
 
+## Word List
+
+The file `lib/english.json` was compiled using a word list of [scowl](http://wordlist.sourceforge.net/). The word list
+was taken from scowl.7.1, `final/english-words.10`, using `compilewords` sample. Acronyms were skipped. To do: compile
+more words.
+
 ## Contribution
 
 Feel free to [file issues](https://github.com/ajlopez/SimpleBoggle) and submit
