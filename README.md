@@ -31,7 +31,11 @@ npm test
 
 ## Samples
 
-TBD
+[Compile Words](https://github.com/ajlopez/SimpleBoggle/tree/master/samples/compilewords) Compile list of words
+into a json file, to be used in other samples.
+
+[Find Words](https://github.com/ajlopez/SimpleBoggle/tree/master/samples/findwords) Find words in a board, using the
+compile word list at `lib/english.json`.
 
 ## To do
 
@@ -42,7 +46,7 @@ TBD
 
 ## Word List
 
-The file `lib/english.json` was compiled using a word list of [scowl](http://wordlist.sourceforge.net/). The word list
+The file `lib/english.json` was compiled using a word list of [scowl project](http://wordlist.sourceforge.net/). The word list
 was taken from scowl.7.1, `final/english-words.10`, using `compilewords` sample. Acronyms were skipped. To do: compile
 more words.
 
